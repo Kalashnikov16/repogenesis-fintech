@@ -1,0 +1,18 @@
+/* ... existing tailwind imports ... */
+@import "tailwindcss";
+
+/* HACKATHON FIX: Hide Next.js Dev Error Overlay */
+/* This prevents the red "1 Issue" box from showing up */
+nextjs-portal {
+  display: none !important;
+}
+
+/* Alternative selector if the above doesn't catch it */
+[data-nextjs-dialog-overlay] {
+  display: none !important;
+}
+
+/* Hide the specific toast notification container */
+[data-nextjs-toast] {
+  display: none !important;
+}
